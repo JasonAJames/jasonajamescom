@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<playlist version="1" xmlns="http://xspf.org/ns/0/">
+<trackList>
+<track> <!-- Single Pre/Postroll -->
+      <creator>IETVonline</creator>
+      <title>IETVonline - Intro</title>
+      <location>http://www.youtube.com/watch?v=ULu65sj2P0c</location>
+      <image>/assets/logo.png</image>
+      <album>preroll</album>
+    </track>
+    <track>
+      <creator>Creator</creator>
+      <title>FOX11 Live</title>
+      <location>http://mfile.akamai.com/23073/live/reflector:34194.asx</location>
+    </track>
+</trackList>
+</playlist>
+

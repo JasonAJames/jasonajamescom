@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<playlist version="1" xmlns="http://xspf.org/ns/0/">
+<trackList>
+
+<track>
+<title>IETVonline - Coming Soon</title>
+<creator>More IETVonline - Intro</creator>
+<location>http://www.socaltelevision.com/IEturf/IETVshows/video/IETVtitleIntro.flv</location>
+<image>/assets/logo.png</image>
+</track>
+<track>
+<title>IETVonline - Air Fest 08</title>
+<creator>IETVonline at Air Fest 08</creator>
+<location>http://www.socaltelevision.com/IEturf/IETVshows/video/Final_Thunderbirds.flv</location>
+<image>/assets/logo.png</image>
+</track>
+
+</trackList>
+</playlist>

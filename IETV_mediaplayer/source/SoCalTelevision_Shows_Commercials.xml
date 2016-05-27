@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<playlist version="1" xmlns="http://xspf.org/ns/0/">
+<trackList>
+<track> <!-- Single Pre/Postroll -->
+      <creator>SoCalTelevision</creator>
+      <title>SoCal Television LIVE Feed 1</title>
+      <location>http://www.ustream.tv/channel/321257</location>
+      <image>/assets/logo.png</image>
+      <album>preroll</album>
+    </track>
+</trackList>
+</playlist>
+
