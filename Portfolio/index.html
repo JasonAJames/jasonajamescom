@@ -160,12 +160,12 @@ footer p {
   <a href="https://jasonajames-website.herokuapp.com/IETVcellSite/index.html" target="_blank">Click Here to Download</a><br> 
   IETV shows to watch on your Mobile Device. --></div>
 <script type="text/javascript">
-var so = new SWFObject('https://jasonajames-website.herokuapp.com/IETV_mediaplayer/mediaplayer.swf','mpl','400','300','8');
+var so = new SWFObject('../IETV_mediaplayer/mediaplayer.swf','mpl','400','300','8');
 so.addParam('allowscriptaccess','always');
 so.addParam('allowfullscreen','true');
 so.addVariable('height','300');
 so.addVariable('width','400');
-so.addVariable('file','https://jasonajames-website.herokuapp.com/IETV_mediaplayer/source/MainShows_Commercials.xml');
+so.addVariable('file','../IETV_mediaplayer/source/MainShows_Commercials.xml');
 so.addVariable('id','JasonAJames');
 so.addVariable('backcolor','0x003399');
 so.addVariable('frontcolor','0xFFFFFF');
@@ -180,7 +180,7 @@ so.addVariable('searchbar','false');
 so.addVariable('showicons','false');
 so.addVariable('autostart','true');
 so.addVariable('enablejs','true');
-so.addVariable("skin", "https://jasonajames-website.herokuapp.com/IETV_mediaplayer/IETVonline_playerSkin1.swf");
+so.addVariable("skin", "../IETV_mediaplayer/IETVonline_playerSkin1.swf");
 so.write('player');
 </script>
 <br>
