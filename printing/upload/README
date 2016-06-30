@@ -1,0 +1,299 @@
+########################################################################
+# Upload-Point 1.6 Beta - Simple Upload System
+# Copyright (c)2005-2008 Todd Strattman
+# strattman@gmail.com
+# http://covertheweb.com/upload-point/
+# License: LGPL
+########################################################################
+#
+# MD5.js Copyright (c) 1998 - 2005, Paul Johnston, distributed under the BSD License:
+# http://pajhome.org.uk/crypt/md5/
+#
+# sha256.js Copyright (c) 2003-2004, Angel Marin, distributed under the BSD License:
+# http://anmar.eu.org/projects/jssha2/
+#
+# jQuery is licensed under the MIT or GPL licenses and is copyright 2007 by John Resig and
+# the jQuery team (http://jquery.com/).
+#
+# Tablesorter and Pager are licensed under the MIT or GPL licenses and are written by 
+# Christian Bach (http://tablesorter.com/docs/).
+#
+# German Translation by:
+# Beat Beer
+# www.stardesign.ch
+#
+# Dutch translation by:
+# Tjerk Plantenberg
+# www.tjerkhelpt.nl
+#
+# Chinese/简体中文 translation by:
+# Yie Alder Feng
+# yyfeng88625@gmail.com
+# fengfeng.x10hosting.com
+#
+# Turkish translation by:
+# Aquaria
+# www.gencgiyen.com
+#
+# Greek Translation by:
+# Alexandros Spyrou
+# http://www.as-websolutions.gr
+# email:alexandros.spyrou@gmail.com
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+# 
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+#
+########################################################################
+
+CONTENTS:
+
+About
+Requirements
+Security
+Setup Basic
+Setup Advanced
+Upgrading
+Notes/Bugs
+Todo
+
+-----------------------------------------------------------------------
+About:
+-----------------------------------------------------------------------
+Actual script is available in English/Duetsch/Espanol/ελληνικα/Nederlands/Türkçe/简体中文.
+
+This is a very simple to use php upload script with password protection. It is designed to be as "plug-n-play" as possible. You do not have to do anything except upload the script, although there are a few options you can easily enable/disable with a browser-based options page.
+
+The script is configured with an options page (options.php) and used with an upload page (index.php).
+
+The only changes that need to be made are to create a password and change your file upload directory.
+
+After uploading:
+
+To use the script, go to:
+http://YOURDOMAIN.com/upload/
+
+If you would like to view and change options in the script go to: http://YOURDOMAIN.com/upload/options.php
+
+You can revisit "options.php" at any point without causing any harm.
+You can also just edit config.php by hand, but the password protection will only work using options.php.
+
+This script is a "rip" from my main script "Edit-Point," so please don't be surprised to see "edit-point" or "text" somewhere in the documentation.
+ http://covertheweb.com/edit-point/
+
+Please feel free to email if you need help or if you have comments, suggestions, or complaints: strattman@gmail.com
+
+I really need "bug" reports and translations!!!
+
+-----------------------------------------------------------------------
+Requirements:
+-----------------------------------------------------------------------
+1) Linux Server with php 4+ (safe_mode = off). A shared server using phpsuexec is recommended as other security methods do not have php running as the user and this makes file creation and shell commands (in the script) difficult. Windows has been reported to work with some changes. See Notes/Bugs.
+2) A website.
+
+-----------------------------------------------------------------------
+Security:
+-----------------------------------------------------------------------
+There is a password protection option that can be turned on or off. I STRONGLY recommend using the built in password protection. I believe it is much more secure than .htaccess or most other password protection scripts. Options.php must be used for the password protection. The passwords cannot be set using the config.php file. Cookies must be enabled.
+
+See "Setup Advanced" for more details.
+
+I also recommend placing your "data" directory outside of your public files. To do this, after installing the script, move the "data" directory outside of your public directory. Then edit config.php by hand to reflect that path. For example, if your script is located at "home/YOURNAME/public_html/upload", the "data" directory should be at "home/YOURNAME/data" and $datadir in config.php should read: 
+$datadir = "../../data";
+
+-----------------------------------------------------------------------
+Setup Basic
+-----------------------------------------------------------------------
+After unpacking the script, you should have a directory called "upload" that contains the script:
+
+- upload(directory)
+	- data(directory)
+		- crypt(directory)
+			- md5.js
+			- sha256.js
+		- progress.gif
+	- lang(directory)
+		- en.php
+		- de.php
+		- es.php
+		- gr.php
+		- nl.php
+		- tr.php
+		- zh-cn-utf8.php
+	- jscripts(directory)
+		- pager(directory)
+			- icons(directory)
+			- jquery.tablesorter.pager.css
+			- jquery.tablesorter.pager.js
+		- asc.gif
+		- bg.gif
+		- desc.gif
+		- jquery-1.2.3.min.js
+		- jquery.tablesorter.min.js
+	- config.php
+	- footer.php
+	- header.php
+	- index.php
+	- info.php
+	- options.php
+	- style.css
+
+1) Upload the "upload" directory and it's contents to your server as a subdirectory of your "public" directory. For example: http://YOURDOMAIN.com/upload/
+
+2) Visit the webbased configuration at http://YOURDOMAIN.com/upload/options.php and make any necessary changes.
+
+3) To begin uploading, go to the Upload-Page:
+http://YOURDOMAIN.com/upload/index.php.
+
+-----------------------------------------------------------------------
+Setup Advanced
+-----------------------------------------------------------------------
+
+--------------------
+INITIAL SETTINGS
+--------------------
+$language = "en.php";
+	Choose your language (English=en.php .:. Deutsch=de.php .:. Espanol=es.php .:. ελληνικα=gr.php .:. Nederlands=nl.php .:. Türkçe=tr.php .:. 简体中文=zh-cn-utf8.php).
+
+
+$page_title = "Upload-Point 1.6 Beta";
+	Change to your desired site name and page title.
+
+
+--------------------
+PASSWORD PROTECTION SETTINGS
+--------------------
+$password_protect = "off";
+	Option to use the built-in password protection.
+
+When the password protection option is used, two files are created and stored in the data directory. These are "admin_pass.php" and "upload_pass.php"
+
+I STRONGLY recommend using the built in password protection. I believe it is much more secure than .htaccess or most other password protection scripts. Options.php must be used for the password protection. The passwords cannot be set using the config.php file. Cookies must be enabled.
+
+The password protection is a "CHAP" (Challenge Handshake Authentication Protocol) system. The system uses md5.js (by Paul Johnston : http://pajhome.org.uk/crypt/md5/) and sha256.js (by Angel Marin : http://anmar.eu.org/projects/jssha2/) to hash passwords client side before sending them to the server. The CHAP system authenticates the user before allowing login.
+
+First, the new password is hashed client side (before submitting), using sha256.js, and then the server encrypts it while hashing it again using another hashed version as the seed. Then it is stored in the data directory.
+
+When logging in, the client and the server do the following:
+
+1) The server creates a unique random string and sets it as a session value and then encrypts it for form submission.
+
+2) The server then concatenates the user agent and language and encrypts a hash of it using the random string as a seed.
+
+3) Then, when the password is submitted:
+a) the client hashes the password (sha256) and sends it;
+b) the client hashes the password (md5) and sends it;
+c) the client hashes the encrypted random string;
+d) the client concatenates the hashed/encrypted random string with random string seed and hashed password and hashes it;
+e) the client hashes the encrypted, hashed agent/language concatenate with random string seed, and sends it.
+
+4) The server then encrypts the received hashed password, using a hash of the pass with a hash of the pass as seed, and stores a session of it.
+
+5) The server then encrypts the random string session variable, using the string as a seed for the agent response.
+
+6) The server the hashes the encrypted random string, with random string seed, for the random string response.
+
+7) The server then get the user agent and language (again) and concatenates them.
+
+8) The server then hashes the encrypted, hashed agent/language concatenate with crypted, random string with random string seed, seed.
+
+9) The server then compares values:
+a) The server checks to see if submitted, encrypted, hashed pass with hashed pass seed, matches the stored one.
+b) The server then checks if the submitted hash of the hashed encrypted random string with random string seed, and hashed password concatenate matches the servers encrypted session of the random string with session random string seed then hashed while concatenating it with the submitted hashed (md5) pass.
+c) The server then checks if the submitted hash of the encrypted hashed agent/language concatenate with encrypted random string with random string seed, matches servers check of the agent/language and random string session while hashing and encrypting them.
+
+--------------------	
+FILE UPLOAD SETTINGS
+--------------------
+The option for basic file upload/rename/delete.
+
+$fileupload = "on";
+	Whether or not the "File Upload" option is available. Of course, the script will not work without this set to on.
+
+$fileupload_dir_name = "files";
+	The file upload directory from the domain name. If this directory does not exist, it will be automatically created. For instance, if you use "http://YOURDOMAIN.com/testing/files/", the file upload directory will equal: "testing/files".
+	
+$up_ignore1 = "";
+$up_ignore2 = "";
+$up_ignore3 = "";
+$up_ignore4 = "";
+$up_ignore5 = "";
+	Files to ignore(not list) in the upload directory. ".htaccess" is ignored by default.
+
+$hide = "off";
+	Hide file listing from logged in users. on or off.
+
+$rename_file = "on";
+	Rename File function. on or off.
+
+$delete_file = "on";
+	Delete File function. on or off.
+
+Custom php.ini
+	You can set your own upload file size limits to override the servers default setting. This will not work on all servers.
+
+--------------------
+BASIC SETTINGS
+--------------------
+$edit_redirect = "3000";
+	The redirect speed for index.php. 1000 = 1 second
+	
+$admin_redirect = "3000";
+	Redirect speed for options.php. 1000 = 1 second
+	
+//---------------------------------------------------------------//
+// You do not need to make changes below, unless you are changing the default directory names or structure.
+//---------------------------------------------------------------//
+
+$head = "on";
+	Whether or not to use the header/footer.
+
+$textdir = "upload";
+	Script directory. For instance, if your Upload-Point installation is at "http://YOURDOMAIN.com/testing/upload", then "$textdir = testing/upload".
+
+$datadir = "data";
+	Data directory name (where the password files, created by the script, are stored). Do not change unless you manually change the "data" directory name.
+
+$pagepath = "../";
+	This is the path from script directory($textdir) to the webpage directory.
+
+$p = "<p>";
+$p2 = "</p>";
+	The start and end tags used in the html that is created. They are only used for Upload-Point script pages.
+
+
+-----------------------------------------------------------------------
+Upgrading
+-----------------------------------------------------------------------
+1) Save your "data" directory and delete everything else (DO NOT DELETE YOUR FILE UPLOAD DIRECTORY, JUST THE SCRIPT DIRECTORY).
+2) Next, upload all files and directories except the "data" directory.
+3) Now visit http://YOURDOMAIN.COM/upload/options.php and turn the password protection on. Your old passwords should now work.
+4) Re-enter your fileupload directory name.
+
+-----------------------------------------------------------------------
+Notes/Bugs:
+-----------------------------------------------------------------------
+- To translate the script:
+1) Download the most recent release: http://covetheweb.com/upload-point/
+2) Use upload/lang/en.php
+3) Leave any tags code "<>" in your file
+4) Add your word for "language" at the end of $l_opt116
+5) I will thank you and ask a few questions and release a new version with your language included.
+
+-----------------------------------------------------------------------
+Todo:
+-----------------------------------------------------------------------
+- maybe add thumbnails if file is an image.
+- eyecandy - templates
+
+You can contact me at: strattman@gmail.com

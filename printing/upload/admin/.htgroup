@@ -1,0 +1,15 @@
+#--->   This file was generated in 'Htpasswd Generator' (4/28/2008)   <---#
+#--->                    www.htpasswdgenerator.com                    <---#
+
+#--->   Total groups:    7                                            <---#
+#--->   Disabled groups: 0                                            <---#
+
+Administrators:Jason_James Jason_James
+Department703:
+# Here you can insert
+# a comment of any group
+Managers:
+Clients:
+Guests:
+Department9:
+SalesDepartment:

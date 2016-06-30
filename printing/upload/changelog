@@ -1,0 +1,51 @@
+Upload-Point - Simple Upload System
+Copyright (c)2005-2008 Todd Strattman
+strattman@gmail.com
+http://covertheweb.com/upload-point/
+
+Changelog:
+Upload-Point 1.61 Beta
+March 10, 2008
+- Removed "How many files to list per page." option.
+
+Upload-Point 1.6 Beta
+March 9, 2008
+- Removed previous pagination code.
+- Added jQuery 1.2.3, tablesorter 2.0.1 plugin, and pager plugin for paginatin and sorting. jQuery is licensed under the MIT or GPL licenses and is copyright 2007 by John Resig and the jQuery team (http://jquery.com/). Tablesorter and pager are licensed under the MIT or GPL licenses and are written by Christian Bach (http://tablesorter.com/docs/).
+- Updated Greek language. Thanks to Alexandros Spyrou - http://www.as-websolutions.gr
+- Updated index file creation.
+- Updated css.
+
+Upload-Point 1.5 Beta
+January 6, 2008
+- Added pagination with option for how many files per page.
+- Added Turkish language. Thanks to Aquaria - http://www.gencgiyen.com
+- Added Greek language. Thanks to Alexandros Spyrou - http://www.as-websolutions.gr
+- Added option to hide uploaded files from logged in users.
+- Added option to create an index file.
+- Added option to disable rename function.
+- Added option to disable delete function.
+- Added animated .gif when uploading.
+
+Upload-Point 1.4 Beta
+November 13, 2007
+- Fixed (again) php.ini bug.
+- Added Chinese language. Thanks to Yie Alder Feng - yyfeng88625@gmail.com - http://fengfeng.x10hosting.com
+
+Upload-Point 1.3
+September 16, 2007
+- Added Dutch/Nederlands language support. Thanks to Tjerk Plantenberg - www.tjerkhelpt.nl.
+
+Upload-Point 1.2
+August 26, 2007
+- Fixed "create custom php.ini" bug.
+
+Upload-Point 1.1
+July 26, 2007
+- Updated check for password file.
+- Fixed reference and link to upload.php to index.php (thanks Indrek).
+- Added Espanol.
+- Fixed password reset message.
+
+Upload-Point 1.01 Beta
+April 6, 2007

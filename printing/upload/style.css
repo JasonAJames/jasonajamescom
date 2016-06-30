@@ -1,0 +1,280 @@
+/*########################################################################
+# IE Imaging Upload System
+# Copyright (c)2008 IE Imaging
+# info@ieimaging.com
+########################################################################*/
+
+body {
+	background: #FFFFFF;
+	color: #000000;
+	margin: 10px;
+	padding: 0;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+}
+
+a:link {
+	color: #039;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #666666;
+}
+a:hover {
+	text-decoration: underline;
+	color: #069;
+}
+a:active {
+	text-decoration: none;
+	color: #066;
+}
+
+.main {
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	border: 1px solid #ccc;
+}
+.main p {
+	margin: 5px;
+}
+.main div {
+	margin: 5px;
+}
+.main input {
+	font-size: 10px;
+}
+
+.bar {
+	color: #066;
+	background: #ffffff;
+	text-align: center;
+	padding: 5px;
+}
+
+.upload {
+	width: 100%;
+	text-align: center;
+}
+.upload td {
+	padding: 0px;
+}
+.upload p {
+	margin: 0;
+	width:800px;
+}
+.uploadlisttd {
+	border: 1px solid #ccc;
+}
+.uploadlistname {
+	border: 1px solid #ccc;
+	width: 100px;
+	text-align: center;
+}
+.uploadlistsize {
+	border: 1px solid #ccc;
+	width: 100px;
+	text-align: center;
+}
+.uploadlistmod {
+	border: 1px solid #ccc;
+	width: 175px;
+	text-align: center;
+}
+.uploadlistrename {
+	border: 1px solid #ccc;
+	width: 100px;
+	text-align: center;
+}
+.uploadlistdelete {
+	border: 1px solid #ccc;
+	width: 75px;
+	text-align: center;
+}
+.uploadlistloc {
+	border: 1px solid #ccc;
+	width: 350px;
+	text-align: center;
+}
+
+h1 {
+	background: none;
+	color: #333;
+	padding: 3px;
+	margin: 0;
+	text-align: center;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 14px;
+}
+h2 {
+	background: none;
+	color: #666;
+	padding: 3px;
+	margin: 0;
+	text-align: center;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+}
+hr {
+	border: 1px solid #ccc;
+}
+
+input {
+	background: #fff;
+	color: #333;
+	border: 1px solid #ccc;
+}
+
+.progress {
+	max-height : 32px;
+	display : none;
+}
+
+#upload_popup a, a:visited {
+	text-decoration: underline;
+	color: #999;
+	background: none;
+	font-size: 10px;
+}
+#upload_popup a span {
+	display: none;
+}
+#upload_popup a:hover {
+	text-decoration: none;
+	color: #CCCCCC;
+	background: none;
+	font-size: 10px;
+	text-indent: 0;
+}
+#upload_popup a:hover span {
+	display: block;
+	position: absolute;
+	top: 35px;
+	right: 0;
+	width: 250px;
+	padding: 5px;
+	margin: 10px;
+	z-index: 1;
+	color: #999;
+	border: 1px #ccc solid;
+	background: #000000;
+	text-align: left;
+}
+
+#option_popup a, a:visited {
+	text-decoration: none;
+	color: #999999;
+	background: none;
+	font-size: 10px;
+}
+
+#option_popup a span {
+	display: none;
+}
+
+#option_popup a:hover {
+	text-decoration: none;
+	color: #CCCCCC;
+	background: none;
+	font-size: 10px;
+	text-indent: 0;
+}
+
+#option_popup a:hover span {
+	display: inline-table;
+	position: relative;
+	top: 0px;
+	right: 0px;
+	width: 400px;
+	padding: 5px;
+	margin: 10px;
+	z-index: 1;
+	color: #999;
+	border: 1px #ccc solid;
+	background: #000000;
+	text-align: left;
+}
+
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #eee;
+	padding: 0px;
+}
+table.tablesorter thead tr .header {
+	background-image: url(jscripts/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+	padding: 0px;
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#bbb;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(jscripts/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(jscripts/desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+	background-color: #bbb;
+}
+/**********Main Style Sheet Below**********/
+
+
+#Header {
+	font-family: Impact, Rockwell, "Rockwell Extra Bold", Stencil, "Stone Sans ITC TT-Semi", sans-serif, serif;
+	color: #036;
+	height: auto;
+	width: 100%;
+}
+
+#MainContent {
+	font-family: Impact, Rockwell, "Rockwell Extra Bold", Stencil, "Stone Sans ITC TT-Semi", sans-serif, serif;
+	font-size: 90%;
+	color: #000;
+	height: auto;
+	width: 100%;
+}
+
+#FOOTER {
+	font-family: Impact, Rockwell, "Rockwell Extra Bold", Stencil, "Stone Sans ITC TT-Semi", sans-serif, serif;
+	font-size: 90%;
+	color: #999;
+	text-align: center;
+	height: auto;
+	width: 100%;
+}
+
+/******Mobile Layout******/
+
+#MobileHeader {
+	display: none;
+}
+#MobileContent {
+	display: none;
+}
+#MainContent #MainContentTable {
+	padding-top: 200px;
+}
+
+#MainContent #wiid_28 {
+	top: 200px;
+
+
+}
+#MainContent #wiid_23 {
+	float: left;
+}
+#MainContent #MainContentTable {
+}
+#MainContent {
+	position: absolute;
+}
+.uploadLink {
+	font-family: Impact, Rockwell, "Rockwell Extra Bold", Stencil, "Stone Sans ITC TT-Semi", sans-serif, serif;
+	font-size: 95%;
+	color: #069;
+}
