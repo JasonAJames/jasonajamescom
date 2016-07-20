@@ -156,42 +156,17 @@ footer p {
   <br>
   <br> 
  </div>
-<script type="text/javascript">
-<<<<<<< HEAD
-var so = new SWFObject('http://jasonajames-website.herokuapp.com/JasonAJames_mediaPlayer/jwplayer.flash.swf','mpl','400','300','8');
-=======
-var so = new SWFObject('http://jasonajames-website.herokuapp.com/JasonAJames_mediaPlayer/jwplayer.flash.swf','mpl','400','300','8');
->>>>>>> d084aef4f61ae19f3c801c952a9c6cf1ce80ce45
-so.addParam('allowscriptaccess','always');
-so.addParam('allowfullscreen','true');
-so.addVariable('height','300');
-so.addVariable('width','400');
-<<<<<<< HEAD
-so.addVariable('file','http://jasonajames-website.herokuapp.com/IETV_mediaplayer/source/MainShows_Commercials.xml');
-=======
-so.addVariable('file','http://jasonajames-website.herokuapp.com/IETV_mediaplayer/source/MainShows_Commercials.xml');
->>>>>>> d084aef4f61ae19f3c801c952a9c6cf1ce80ce45
-so.addVariable('id','JasonAJames');
-so.addVariable('backcolor','0x003399');
-so.addVariable('frontcolor','0xFFFFFF');
-so.addVariable('lightcolor','0xFFFFFF');
-so.addVariable('screencolor','0x666666');
-so.addVariable('bufferlength','10.0');
-so.addVariable('captions','(c)2016 Jason A. James');
-so.addVariable('volume','75');
-so.addVariable('link','http://jasonajames-website.herokuapp.com');
-so.addVariable('linktarget','_blank');
-so.addVariable('searchbar','false');
-so.addVariable('showicons','false');
-so.addVariable('autostart','true');
-so.addVariable('enablejs','true');
-<<<<<<< HEAD
-so.addVariable("skin", "http://jasonajames-website.herokuapp.com/JasonAJames_mediaPlayer/skins/vapor.css");
-=======
-so.addVariable("skin", "http://jasonajames-website.herokuapp.com/JasonAJames_mediaPlayer/skins/vapor.css");
->>>>>>> d084aef4f61ae19f3c801c952a9c6cf1ce80ce45
-so.write('player');
-</script>
+<script type="text/javascript" src="http://jasonajames-website.herokuapp.com/JasonAJames_mediaPlayer/jwplayer.js"></script>
+<div id="player_1"></div>
+<script type="text/javascript">// <![CDATA[
+jwplayer('player_1').setup({
+    file: "http://jasonajames-website.herokuapp.com/IETV_mediaplayer/source/MainShows_Commercials.xml",
+    width: "100%",
+    height: "100%",
+    stretching: "fill",
+    flashplayer:"http://jasonajames-website.herokuapp.com/JasonAJames_mediaPlayer/jwplayer.flash.swf"
+  });
+// ]]></script>
 
 <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLWFEpaUqHbhS7vTJe5TS-SjJuZB3eT9B2" frameborder="0" allowfullscreen></iframe>-->
 <br>
