@@ -4,94 +4,112 @@
 <track> <!-- Single Pre/Postroll -->
       <creator>Video edited by Jason A. James</creator>
       <title>Intro</title>
-      <location>https://www.youtube.com/watch?v=xttOoOhPQf8</location>
+      <location>https://s3-us-west-2.amazonaws.com/my-portfolio-videos/VideoPortfolio_Intro1_wSound.flv</location>
       <image>https://jasonajames-website.herokuapp.com/assets/Jason_in_Suite.jpg</image>
       <album>preroll</album>
     </track>
 	<track>
       <creator>Video filmed and edited by Jason A. James</creator>
+      <title>Video Editing Intro</title>
+      <location>https://s3-us-west-2.amazonaws.com/my-portfolio-videos/VideoEditing.flv</location>
+      <image>https://jasonajames-website.herokuapp.com/assets/Jason_in_Suite.jpg</image>
+    </track>
+	<track>
+      <creator>Video filmed and edited by Jason A. James</creator>
       <title>Thunderbirds</title>
-      <location>https://youtu.be/TT293BDLiv4</location>
+      <location>https://s3-us-west-2.amazonaws.com/my-portfolio-videos/AirFest08_Thunderbirds.flv</location>
       <image>https://jasonajames-website.herokuapp.com/assets/Jason_in_Suite.jpg</image>
     </track>
 	<track>
       <creator>Video filmed and edited by Jason A. James</creator>
       <title>Millennium Car Show</title>
-      <location>https://youtu.be/fqtxADmRBH8</location>
+      <location>https://s3-us-west-2.amazonaws.com/my-portfolio-videos/MillenniumCarShow_Full.flv</location>
       <image>https://jasonajames-website.herokuapp.com/assets/Jason_in_Suite.jpg</image>
     </track>
 	<track>
-      <creator>Video edited by Jason A. James</creator>
-      <title>The Antagonist</title>
-      <location>https://youtu.be/6Dtnsu2yjKQ</location>
+      <creator>Video filmed and edited by Jason A. James</creator>
+      <title>Route66</title>
+      <location>https://s3-us-west-2.amazonaws.com/my-portfolio-videos/Route66_2011promo.flv</location>
       <image>https://jasonajames-website.herokuapp.com/assets/Jason_in_Suite.jpg</image>
     </track>	
 	<track>
       <creator>Video filmed and edited by Jason A. James</creator>
-      <title>Route66 2011</title>
-      <location>https://youtu.be/fEigTYTc6ZQ</location>
+      <title>Corona Farmers Market</title>
+      <location>https://s3-us-west-2.amazonaws.com/my-portfolio-videos/CoronaFarmersMarket_Final.flv</location>
       <image>https://jasonajames-website.herokuapp.com/assets/Jason_in_Suite.jpg</image>
-    </track>
+    </track>	
+	<track>
+      <creator>Video filmed and edited by Jason A. James</creator>
+      <title>Carlos OBriens</title>
+      <location>https://s3-us-west-2.amazonaws.com/my-portfolio-videos/CarlosObriens.flv</location>
+      <image>https://jasonajames-website.herokuapp.com/assets/Jason_in_Suite.jpg</image>
+    </track>	
+	<track>
+      <creator>Video edited by Jason A. James</creator>
+      <title>The Antagonist</title>
+      <location>https://s3-us-west-2.amazonaws.com/my-portfolio-videos/Antagonist_Ipod.flv</location>
+      <image>https://jasonajames-website.herokuapp.com/assets/Jason_in_Suite.jpg</image>
+    </track>	
 	<track>
       <creator>Video edited by Jason A. James</creator>
       <title>Everything Happens in Black and White</title>
-      <location>https://youtu.be/VIPQ5hWaxv4</location>
+      <location>https://s3-us-west-2.amazonaws.com/my-portfolio-videos/Everything+Happens+in+Black+and+White+Trailer+-+IMDb.flv</location>
       <image>https://jasonajames-website.herokuapp.com/assets/Jason_in_Suite.jpg</image>
     </track>
 	<track>
       <creator>Video filmed and edited by Jason A. James</creator>
-      <title>HorseTown USA - Hourse week in Norco</title>
-      <location>https://youtu.be/GJurkU0wHHw</location>
+      <title>HorseTown USA - Horse week in Norco</title>
+      <location>https://s3-us-west-2.amazonaws.com/my-portfolio-videos/NorcoRodeo_Trailer.flv</location>
       <image>https://jasonajames-website.herokuapp.com/assets/Jason_in_Suite.jpg</image>
     </track>
 	<track>
       <creator>Video filmed and edited by Jason A. James</creator>
-      <title>Centenial High School Holocaust Memorial</title>
-      <location>https://youtu.be/nOY4E8vx3yI</location>
+      <title>Centennial High School Holocaust Memorial</title>
+      <location>https://s3-us-west-2.amazonaws.com/my-portfolio-videos/CentenialHolocaustMemorial.flv</location>
       <image>https://jasonajames-website.herokuapp.com/assets/Jason_in_Suite.jpg</image>
     </track>	
 	<track> <!-- Single Pre/Postroll -->
       <creator>Video edited by Jason A. James</creator>
       <title>Animation Next</title>
-      <location>https://youtu.be/XBJjEyEwr40</location>
+      <location>https://s3-us-west-2.amazonaws.com/my-portfolio-videos/animation.flv</location>
       <image>https://jasonajames-website.herokuapp.com/assets/Jason_in_Suite.jpg</image>
       <album>preroll</album>
     </track>
 	<track>
       <creator>Virtual Tour animated and edited by Jason A. James</creator>
       <title>Real Estate Virtual Tour Commercial</title>
-      <location>https://youtu.be/9JLQmTR_HaE</location>
+      <location>https://s3-us-west-2.amazonaws.com/my-portfolio-videos/17080SpringCanyon_VirtualTour.flv</location>
       <image>https://jasonajames-website.herokuapp.com/assets/Jason_in_Suite.jpg</image>
     </track>
 	<track>
       <creator>Video animated and edited by Jason A. James</creator>
       <title>WeedShack.com Commercial</title>
-      <location>https://youtu.be/1gCXNyWsMB4</location>
+      <location>https://s3-us-west-2.amazonaws.com/my-portfolio-videos/WeedShack_commercial04.flv</location>
       <image>https://jasonajames-website.herokuapp.com/assets/Jason_in_Suite.jpg</image>
     </track>
     <track> <!-- Single Pre/Postroll -->
       <creator>Video edited by Jason A. James</creator>
       <title>DVD Slide Show Intro</title>
-      <location>https://youtu.be/y7E6Sy-goKY</location>
+      <location>https://s3-us-west-2.amazonaws.com/my-portfolio-videos/DVDslideshow.flv</location>
       <image>https://jasonajames-website.herokuapp.com/assets/Jason_in_Suite.jpg</image>
       <album>preroll</album>
     </track>
 	<track>
       <creator>Video animated and edited by Jason A. James</creator>
       <title>DVD Slide Show Sample - Rain Turns 21</title>
-      <location>https://youtu.be/Y1ZsWD3bJpU</location>
+      <location>https://s3-us-west-2.amazonaws.com/my-portfolio-videos/RainTurns21.flv</location>
       <image>https://jasonajames-website.herokuapp.com/assets/Jason_in_Suite.jpg</image>
     </track>
 	<track>
       <creator>Video animated and edited by Jason A. James</creator>
-      <title>DVD Slide Show Sample</title>
-      <location>https://youtu.be/SsQJuFi5los</location>
+      <title>DVD Slide Show Sample - Rudy</title>
+      <location>https://s3-us-west-2.amazonaws.com/my-portfolio-videos/Rudy.flv</location>
       <image>https://jasonajames-website.herokuapp.com/assets/Jason_in_Suite.jpg</image>
     </track>
 	<track>
       <creator>Video edited by Jason A. James</creator>
       <title>The End</title>
-      <location>https://youtu.be/g8ChTMDHCnk</location>
+      <location>https://s3-us-west-2.amazonaws.com/my-portfolio-videos/end.flv</location>
       <image>https://jasonajames-website.herokuapp.com/assets/Jason_in_Suite.jpg</image>
 	  </track>
 </trackList>
