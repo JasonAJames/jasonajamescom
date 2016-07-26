@@ -5,10 +5,10 @@
 <head>
 <meta charset="UTF-8" />
 <title>Jason James Résumé</title>
-<meta name="Keywords" content="Jason James, computer programmer, web developer, Jason A James, software engineer, webmaster, web designer, 
-software developer, Java, C++, HTML, HTML5, CSS3, PHP, AngularJS, Jason Alan James" />
-<meta name="Description" content="Jason James Software Developer extraordinaire is well versed in the development environment. Jason A James has focused on Android, Java, and C++ development in his career thus far. However, Jason James is a fast learner, always interested in learning new tech coding languages." />
-
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <style>
 
 body {
@@ -25,7 +25,6 @@ header {
 h1 {
 	margin: 0 auto;
 	padding: 0;
-	width: 810px;
 	font: arial 4em;
 	text-align: center;
 	color: #FFFFFF;
@@ -35,13 +34,13 @@ h1 {
 	border-right: 3px ridge #041666;
 	border-bottom:0px;
 	background-color: #000066;	
-	background-image:url(resume/Header_BG.gif);
+	background-image:url(Header_BG.gif);
+	background-repeat:repeat-x;
 }
 
 address {
 	margin: 0 auto;
 	padding: 0;
-	width: 810px;
 	font: arial 4em;
 	text-align: center;
 	color: #FFFFFF;
@@ -51,16 +50,16 @@ address {
 	border-right: 3px ridge #041666;
 	border-bottom:3px ridge #041666;
 	background-color: #000066;	
-	background-image:url(resume/Header_BG.gif);
+	background-image:url(Header_BG.gif);
+	background-repeat:repeat-x;
 }
 
 main {
 	overflow: auto;
 	display: block;
 	margin: 0 auto;
-	padding: 0 0 0 10px;
-	width: 800px;
-	background-image: url(resume/Nav_BG.gif);
+	padding: 0 0 0 0px;
+	background-image:url(resume/Nav_BG.gif);
 	border-left: ridge 3px #900;
 	border-bottom: ridge 3px #900;
 	border-right: ridge 3px #900;
@@ -71,12 +70,14 @@ th {
 }
 
 nav {
+	position:absolute;
 	padding:5px;
 	width:130px;
 	float:left;
 	line-height:45px;
 	font-size:1.2em;
 	font-weight:bold;	
+	z-index: 1;
 }
 
 a {
@@ -90,16 +91,17 @@ a:hover {
 }
 
 section {
-	float:right;
-	width:660px;	
+	padding-left:140px;
+	z-index: 2;	
 }
 
 article {
-	padding:10px 20px 15px 25px;
+	padding:10px 25px 15px 25px;
 	background:#fff;
 	line-height:1.2;	
 	border-left: ridge 3px #900;
 	font-family:Arial;
+	min-height: 500px;
 }
 
 footer {
@@ -107,7 +109,6 @@ footer {
 }
 
 footer p {
-	width: 800px;
 	margin: 0 auto;
 	padding: 5px 0;
 	font: cabin 1.1em;
@@ -117,9 +118,9 @@ footer p {
 
 </style>
 </head>
-
 <body>
-
+<div id="wrapper" class="container-fluid">
+<div id="header-div" class="col-md-12">
 <header>
 
  <h1>&nbsp; Jason A. James &nbsp;</h1>
@@ -132,7 +133,7 @@ footer p {
 </header>
 
 <main>
-
+<div id="Nav" class="col-md-2">
  <nav>
    <a href="index.html">About</a><br/>
    <a href="resume/award.html">Awards</a><br/>
@@ -141,17 +142,18 @@ footer p {
    <a href="resume/skill.html">Skills</a><br/>
    <a href="Portfolio/index.html">Video Portfolio</a><br/>
  </nav>
-
+</div>
+<div id="mainContent" class="col-md-12">
  <section>
 
   <article>
 <!--Breadcrumb Start--><p style="margin:5px; padding:5px; text-align:left; color:white; border:solid #811D15 1px; background-color:#A1381E; font-family:Times;">Jason A. James' Online Résumé Home</p><!--Breadcrumb End-->
    <h2 style="margin:0; color:#A1381E;">
    <span style="font-size:1.4em;">About Jason James</span><br />
-   <span style="font:italic 0.9em times;"><dfn title="Also Known As">AKA</dfn>: "The Computer Repair / Video Production Specialist"</span></h2>
-   <div style="width:126px; height:162px;
+   <span style="font:italic 0.9em times;"><dfn title="Also Known As">AKA</dfn>: "The Computer Repair Specialist"</span></h2>
+   <div style="width:126px; height:160px;
    font-size:0pt; float:left; margin:2px 20px 2px 10px; border:groove maroon 3pt;">
-   <img src="resume/JasonJames.jpg" alt="Jason A. James"/></div>
+   <img src="resume/JasonJames.jpg" class="img-responsive" alt="Jason A. James"/></div>
    
    <p style="text-align:justify; padding-top:10px;">My name is <dfn title="Jason Alan James" style="font-style:normal">Jason A. James</dfn>.</p>
    <p style="text-align:justify; line-height:1.6em;">I am interested in obtaining a longterm position in the computer field, with a well established company in the Southern California, <dfn title="Los Angeles">L.A.</dfn> Region.</p>
@@ -160,13 +162,14 @@ footer p {
   </article>
 
  </section>
-
+</div>
 </main>
-
+<div class="col-md-12">
 <footer>
   <p style="text-align:center; margin-top:5;">&copy; Copyright Jason James, 2016. All rights reserved.</p>
 <p style="text-align:center;"><a href="http://www.JasonAJames.com" target="_parent" style="text-decoration:none;"><img src="resume/Footer_Image.gif" alt="Return to http://www.JasonAJames.com/"/></a></p>
 </footer>
-
+</div>
+</div>
 </body>
 </html>

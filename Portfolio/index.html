@@ -7,7 +7,10 @@
 <meta name="Keywords" content="Jason James, computer programmer, web developer, Jason A James, software engineer, webmaster, web designer, 
 software developer, Java, C++, HTML, HTML5, CSS3, PHP, AngularJS, Jason Alan James" />
 <meta name="Description" content="Jason James Software Developer extraordinaire is well versed in the development environment. Jason A James has focused on web, Android, Java, and C++ development in his career thus far. However, Jason James is a fast learner, always interested in learning new tech coding languages." />
-
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <style>
 
 body {
@@ -24,7 +27,6 @@ header {
 h1 {
 	margin: 0 auto;
 	padding: 0;
-	width: 810px;
 	font: arial 4em;
 	text-align: center;
 	color: #FFFFFF;
@@ -34,13 +36,13 @@ h1 {
 	border-right: 3px ridge #041666;
 	border-bottom:0px;
 	background-color: #000066;	
-	background-image:url(../resume/Header_BG.gif);
+	background-image:url(Header_BG.gif);
+	background-repeat:repeat-x;
 }
 
 address {
 	margin: 0 auto;
 	padding: 0;
-	width: 810px;
 	font: arial 4em;
 	text-align: center;
 	color: #FFFFFF;
@@ -50,16 +52,16 @@ address {
 	border-right: 3px ridge #041666;
 	border-bottom:3px ridge #041666;
 	background-color: #000066;	
-	background-image:url(../resume/Header_BG.gif);
+	background-image:url(Header_BG.gif);
+	background-repeat:repeat-x;
 }
 
 main {
 	overflow: auto;
 	display: block;
 	margin: 0 auto;
-	padding: 0 0 0 10px;
-	width: 800px;
-	background-image: url(../resume/Nav_BG.gif);
+	padding: 0 0 0 0px;
+	background-image:url(../resume/Nav_BG.gif);
 	border-left: ridge 3px #900;
 	border-bottom: ridge 3px #900;
 	border-right: ridge 3px #900;
@@ -70,12 +72,14 @@ th {
 }
 
 nav {
+	position:absolute;
 	padding:5px;
 	width:130px;
 	float:left;
 	line-height:45px;
 	font-size:1.2em;
 	font-weight:bold;	
+	z-index: 1;
 }
 
 a {
@@ -89,16 +93,17 @@ a:hover {
 }
 
 section {
-	float:right;
-	width:660px;	
+	padding-left:140px;
+	z-index: 2;	
 }
 
 article {
-	padding:10px 20px 15px 25px;
+	padding:10px 25px 15px 25px;
 	background:#fff;
 	line-height:1.2;	
 	border-left: ridge 3px #900;
 	font-family:Arial;
+	min-height: 500px;
 }
 
 footer {
@@ -106,7 +111,6 @@ footer {
 }
 
 footer p {
-	width: 800px;
 	margin: 0 auto;
 	padding: 5px 0;
 	font: cabin 1.1em;
@@ -123,7 +127,8 @@ footer p {
 </head>
 
 <body>
-
+<div id="wrapper" class="container-fluid">
+<div id="header-div" class="col-md-12">
 <header>
 
  <h1>&nbsp; Jason A. James &nbsp;</h1>
@@ -136,7 +141,7 @@ footer p {
 </header>
 
 <main>
-
+<div id="Nav" class="col-md-2">
  <nav>
    <a href="../index.html">About</a><br/>
    <a href="../resume/award.html">Awards</a><br/>
@@ -145,7 +150,8 @@ footer p {
    <a href="../resume/skill.html">Skills</a><br/>  
    <a href="index.html">Video Portfolio</a><br/>
  </nav>
-
+</div>
+<div id="mainContent" class="col-md-12">
  <section>
 
   <article>
@@ -159,6 +165,7 @@ footer p {
 <script>
     jwplayer("JasonJames-MediaPlayer").setup({
       playlist: "https://content.jwplatform.com/feeds/HPmz5doG.json",
+	  	volume: 50,
 	    stretching: "fill",
       	 captions: {
         color: "FFCC00",
@@ -180,13 +187,14 @@ software developer, Java, C++, HTML, HTML5, CSS3, PHP, AngularJS, Jason Alan Jam
   </article>
 
  </section>
-
+</div>
 </main>
-
+<div class="col-md-12">
 <footer>
   <p style="text-align:center; margin-top:5;">&copy; Jason James, 2016. All rights reserved.</p>
 <p style="text-align:center;"><a href="http://jasonajames-website.herokuapp.com" target="_parent" style="text-decoration:none;"><img src="../resume/Footer_Image.gif" alt="Return to http://jasonajames-website.herokuapp.com/"/></a></p>
 </footer>
-
+</div>
+</div>
 </body>
 </html>

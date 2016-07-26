@@ -5,7 +5,10 @@
 <head>
 <meta charset="UTF-8" />
 <title>Jason James Résumé</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <style>
 
 body {
@@ -22,7 +25,6 @@ header {
 h1 {
 	margin: 0 auto;
 	padding: 0;
-	width: 810px;
 	font: arial 4em;
 	text-align: center;
 	color: #FFFFFF;
@@ -33,12 +35,12 @@ h1 {
 	border-bottom:0px;
 	background-color: #000066;	
 	background-image:url(Header_BG.gif);
+	background-repeat:repeat-x;
 }
 
 address {
 	margin: 0 auto;
 	padding: 0;
-	width: 810px;
 	font: arial 4em;
 	text-align: center;
 	color: #FFFFFF;
@@ -49,14 +51,14 @@ address {
 	border-bottom:3px ridge #041666;
 	background-color: #000066;	
 	background-image:url(Header_BG.gif);
+	background-repeat:repeat-x;
 }
 
 main {
 	overflow: auto;
 	display: block;
 	margin: 0 auto;
-	padding: 0 0 0 10px;
-	width: 800px;
+	padding: 0 0 0 0px;
 	background-image: url(Nav_BG.gif);
 	border-left: ridge 3px #900;
 	border-bottom: ridge 3px #900;
@@ -68,12 +70,14 @@ th {
 }
 
 nav {
+	position:absolute;
 	padding:5px;
 	width:130px;
 	float:left;
 	line-height:45px;
 	font-size:1.2em;
 	font-weight:bold;	
+	z-index: 1;
 }
 
 a {
@@ -88,7 +92,8 @@ a:hover {
 
 section {
 	float:right;
-	width:660px;	
+	padding-left:140px;
+	z-index: 2;	
 }
 
 article {
@@ -104,7 +109,6 @@ footer {
 }
 
 footer p {
-	width: 800px;
 	margin: 0 auto;
 	padding: 5px 0;
 	font: cabin 1.1em;
@@ -113,23 +117,27 @@ footer p {
 }
 
 </style>
+
+
+    
 </head>
 
 <body>
-
+<div id="wrapper" class="container-fluid">
+<div id="header-div" class="col-md-12">
 <header>
 
  <h1>&nbsp; Jason A. James &nbsp;</h1>
 
    <address style="text-align: center; font: bold 12pt times; color: #FFFFFF;"><br />
 
-
    <a href="mailto:info@jasonajames.com?subject=RE: Jason A. James Résumé&body=I am contacting you in regards to your Résumé I saw on your website." style="color:yellow;">info@JasonAJames.com</a><br /><br /></address>
 
 </header>
 
-<main>
 
+<main>
+<div id="Nav" class="col-md-2">
  <nav>
    <a href="../index.html">About</a><br/>
    <a href="educ.html">Education</a><br/>
@@ -138,7 +146,8 @@ footer p {
    <a href="award.html">Awards</a><br/>
    <a href="../Portfolio/index.html">Video Portfolio</a><br/>
  </nav>
-
+</div>
+<div id="mainContent" class="col-md-10">
  <section>
 
   <article>
@@ -148,7 +157,7 @@ footer p {
    <span style="font:italic 0.9em times;"><dfn title="Also Known As">AKA</dfn>: "The Computer Repair Specialist"</span></h2>
    <div style="width:126px; height:162px;
    font-size:0pt; float:left; margin:2px 20px 2px 10px; border:groove maroon 3pt;">
-   <img src="JasonJames.jpg" alt="Jason A. James"/></div>
+   <img src="JasonJames.jpg" class="img-responsive" alt="Jason A. James"/></div>
    
    <p style="text-align:justify; padding-top:10px;">My name is <dfn title="Jason Alan James" style="font-style:normal">Jason A. James</dfn>.</p>
    <p style="text-align:justify; line-height:1.6em;">I am interested in obtaining a longterm position in the computer field, with a well established company in the Southern California, <dfn title="Los Angeles">L.A.</dfn> Region.</p>
@@ -157,13 +166,14 @@ footer p {
   </article>
 
  </section>
-
+</div>
 </main>
-
+<div class="col-md-12">
 <footer>
   <p style="text-align:center; margin-top:5;">&copy; Copyright Jason James, 2016. All rights reserved.</p>
 <p style="text-align:center;"><a href="http://www.JasonAJames.com" target="_parent" style="text-decoration:none;"><img src="Footer_Image.gif" alt="Return to http://www.JasonAJames.com/"/></a></p>
 </footer>
-
+</div>
+</div>
 </body>
 </html>

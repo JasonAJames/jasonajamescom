@@ -9,6 +9,10 @@
 software developer, Java, C++, HTML, HTML5, CSS3, PHP, AngularJS, Jason Alan James" />
 <meta name="Description" content="Jason James Software Developer extraordinaire is well versed in the development environment. Jason A James has focused on Android, Java, and C++ development in his career thus far. However, Jason James is a fast learner, always interested in learning new tech coding languages." />
 
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <style>
 
 body {
@@ -25,7 +29,6 @@ header {
 h1 {
 	margin: 0 auto;
 	padding: 0;
-	width: 810px;
 	font: arial 4em;
 	text-align: center;
 	color: #FFFFFF;
@@ -36,12 +39,12 @@ h1 {
 	border-bottom:0px;
 	background-color: #000066;	
 	background-image:url(Header_BG.gif);
+	background-repeat:repeat-x;
 }
 
 address {
 	margin: 0 auto;
 	padding: 0;
-	width: 810px;
 	font: arial 4em;
 	text-align: center;
 	color: #FFFFFF;
@@ -52,14 +55,14 @@ address {
 	border-bottom:3px ridge #041666;
 	background-color: #000066;	
 	background-image:url(Header_BG.gif);
+	background-repeat:repeat-x;
 }
 
 main {
 	overflow: auto;
 	display: block;
 	margin: 0 auto;
-	padding: 0 0 0 10px;
-	width: 800px;
+	padding: 0 0 0 0px;
 	background-image: url(Nav_BG.gif);
 	border-left: ridge 3px #900;
 	border-bottom: ridge 3px #900;
@@ -70,59 +73,15 @@ th {
 	color:#7F2515;
 }
 
-TOProw h3 {
-	color:#7F2515;
-	font: bold 16pt arial;
-}
-
-TOProw p {
-	text-align:justify;
-	text-indent:20px;
-	line-height:1.6em;
-	padding:0 0 10px 0;
-	width:600px;
-}
-
-LTcolumn {
-	float:left;
-}
-
-LTcolumn h3 {
-	width:295px;
-	padding:5px 0 0 0;
-	vertical-align:text-top;
-	color:#7F2515;
-	font: bold 16pt arial;
-}
-
-LTcolumn p ol {
-	width:295px;
-	margin-top:50px;
-	vertical-align:text-top;
-}
-
-RTcolumn {
-	float:right;
-	margin-top:55px;
-}
-
-RTcolumn p {
-	width:295px;
-	padding-left:5px;
-}
-
-RTcolumn ol {
-	width:295px;
-	padding-left:5px;
-}
-
 nav {
+	position:absolute;
 	padding:5px;
 	width:130px;
 	float:left;
 	line-height:45px;
 	font-size:1.2em;
 	font-weight:bold;	
+	z-index: 1;
 }
 
 a {
@@ -136,17 +95,17 @@ a:hover {
 }
 
 section {
-	float:right;
-	width:660px;	
+	padding-left:140px;
+	z-index: 2;	
 }
 
 article {
-	padding:10px 20px 15px 25px;
+	padding:10px 25px 150% 25px;
 	background:#fff;
 	line-height:1.2;	
 	border-left: ridge 3px #900;
 	font-family:Arial;
-	height:1100px;
+	min-height: 500px;
 }
 
 footer {
@@ -154,7 +113,6 @@ footer {
 }
 
 footer p {
-	width: 800px;
 	margin: 0 auto;
 	padding: 5px 0;
 	font: cabin 1.1em;
@@ -166,7 +124,8 @@ footer p {
 </head>
 
 <body>
-
+<div id="wrapper" class="container-fluid">
+<div id="header-div" class="col-md-12">
 <header>
 
  <h1>&nbsp; Jason A. James &nbsp;</h1>
@@ -179,7 +138,7 @@ footer p {
 </header>
 
 <main>
-
+<div id="Nav" class="col-md-2">
  <nav>
    <a href="../index.html">About</a><br/>
    <a href="award.html">Awards</a><br/>
@@ -188,7 +147,8 @@ footer p {
    <a href="skill.html">Skills</a><br/>  
    <a href="../Portfolio/index.html">Video Portfolio</a><br/>
  </nav>
-
+</div>
+<div id="mainContent" class="col-md-12">
  <section>
 
   <article>
@@ -197,42 +157,63 @@ footer p {
    <h2 style="margin:0; color:#A1381E;">
    <span style="font-size:1.4em;">Special Skills &amp; Abilities</span><br />
    </h2>
-   <div style="width:126px; height:162px;
-   font-size:0pt; float:left; margin:2px 20px 2px 10px; border:groove maroon 3pt;">
-   <img src="JasonJames.jpg" alt="Jason A. James"/></div>
-      
-      <TOProw style="line-height:0.1em">
-      <h3>Computer Skills &amp; Certifications</h3>
-      <p style="text-align:justify; vertical-align:top;"><em>Proficient with Android, Linux, Mac, and Windows</em><br>&nbsp;&nbsp;&nbsp;&nbsp;
+   <div class="col-md-10">
+   <table class="table"><tr><td rowspan="4">
+   <div style="font-size:0pt; float:left; margin:2px 20px 2px 10px; border:groove maroon 3pt;">
+   <img src="JasonJames.jpg" class="img-responsive" alt="Jason A. James"/></div></td><td><h3>Computer Skills &amp; Certifications</h3></td></tr><tr><td><p style="vertical-align:top;"><em>Proficient with Android, Linux, Mac, and Windows</em>
+</p><p style="vertical-align:top;">
 <span style="text-decoration:underline; color:#93351A;">CompTIA 220-801 Certification</span></p>
-
-
-<p style="text-align:justify; vertical-align:top;">GitHub Portfolio: <a href="https://github.com/JasonAJames" target="_blank" style="color:blue;">https://github.com/JasonAJames</a></p>
-      <p style="text-align:justify; vertical-align:top; padding-top:0px;">I have work experience with the following programs:</p>
-</TOProw>
-<!--Left Column Start-->  
-<LTcolumn><h3>Adobe <dfn title="Creative Cloud">CC</dfn></h3><p style="line-height:1.6em;"><ul style="list-style-type:none;"><li>After Effects CC</li>
+<p style="vertical-align:top;">GitHub Portfolio: <a href="https://github.com/JasonAJames" target="_blank" style="color:blue;">https://github.com/JasonAJames</a></p></td></tr></table><div id="mainContent" class="col-md-12">
+      <p style="vertical-align:top; padding-top:0px;">I have work experience with the following programs:</p>
+     </div>
+ </div>
+<div class="col-md-12">
+<table class="table"><tr><th colspan="2" style="background:#CCC"><h3>Adobe <dfn title="Creative Cloud">CC</dfn></h3></th></tr><tr><td><p style="line-height:1.6em;"><ul style="list-style-type:none;"><li>After Effects CC</li>
 <li>Device Central CC</li>
 <li>Dreamweaver CC</li>
 <li>Fireworks CC</li>
 <li>Flash Professional CC</li>
 <li>Illustrator CC</li>
 </ul>
-</p>
-<h3>Microsoft Office Suite 2013</h3>
-<p style="line-height:1.6em;"><ul style="list-style-type:none;">
+</p></td><td><p style="line-height:1.6em;"><ul start="8" style="list-style-type:none;">
+<li>InCopy CC</li>
+<li>InDesign CC</li>
+<li>Media Encoder CC</li>
+<li>Photoshop CC</li>
+<li>Premiere Pro CC</li>
+</ul>
+</p></td></tr>
+
+<tr><th style="background-color:#CCC;"><h3>Microsoft Office 2013/365</h3></th><th style="background-color:#CCC;"><h3>Final Cut X Studio</h3></th></tr><tr><td><p style="line-height:1.6em;"><ul style="list-style-type:none;">
 <li>Access</li>
+<li>Excel</li>
 <li>Outlook</li>
+<li>PowerPoint</li>
 <li>Word</li>
-</ul></p>
-<h3>Final Cut HD 5 Studio</h3>
-<p style="line-height:1.6em;"><ul style="list-style-type:none;">
-<li>Final Cut 5 HD</li>
-<li>Soundtrack</li>
-</ul></p><p style="line-height:1.6em;">
-<h3><span style="text-decoration:underline;">Program Languages & Skills:</span></h3>
+</ul></p></td><td><p style="line-height:1.6em;"><ul style="list-style-type:none;">
+  <li>Final Cut X</li>
+  <li>DVD Studio Pro</li>
+  <li>Soundtrack</li>
+  <li>Live Type</li>
+</ul></p></td></tr>
+<tr><th style="background-color:#CCC;"><h3>Object Oriented Programming IDE’s</h3></th><th style="background-color:#CCC;"><h3>Version Control</h3></th></tr><tr><td><p style="line-height:1.6em;"><ul style="list-style-type:none;">
+  <li>Visual Studios 2015</li>
+  <li>Netbeans 8.1</li>
+  <li>IntelliJ IDEA 15</li>
+  <li>Arduino 1.6.9</li>
+  <li>Android Studio </li>
+</ul></p></td><td><p style="line-height:1.6em;"><ul style="list-style-type:none;">
+  <li>Git</li>
+</ul></p></td></tr>
+</table>
+<table class="table">
+<th colspan="2" style="background-color:#CCC;">
+<p style="line-height:1.6em;">
+<h3><span style="text-decoration:underline;">Program Languages & Skills:</span></h3></p></th><tr><td style="vertical-align:top">
+<p style="line-height:1.6em;">
 <ul style="list-style-type:none;">
 <li>ASP.NET</li>
+<li>Bootstrap</li>
 <li>AWS<br/>&nbsp;- (EC2, EB CLI, S3, RDS, Route 53)</li>
 <li>C / C++</li>
 <li>CMS</li>
@@ -241,26 +222,8 @@ footer p {
 <li>HTML & HTML5</li>
 <li>PHP</li>
 <li>Java</li>
-<li>Javascript</li></ul></p>
-</LTcolumn>
-<!--Left Column End-->
-<!--Right Column Start -->
-<RTcolumn><p style="line-height:1.6em;"><ul start="8" style="list-style-type:none;">
-<li>InCopy CC</li>
-<li>InDesign CC</li>
-<li>Media Encoder CC</li>
-<li>Photoshop CC</li>
-<li>Premiere Pro CC</li>
-</ul>
-</p><p style="line-height:1.6em;"><ul start="8" style="list-style-type:none; padding-top:75px;">
-<li>Excel</li>
-<li>PowerPoint</li>
-</ul>
-</p><p style="line-height:1.6em;"><ul start="8" style="list-style-type:none; padding-top:75px;">
-<li>DVD Studio Pro</li>
-<li>Live Type</li>
-</ul>
-</p><p style="line-height:1.6em;"><ul start="8" style="padding-right:30px; list-style-type:none; padding-top:80px;"><li>JSON</li>
+<li>Javascript</li></ul></p></td>
+<td style="vertical-align:top"><p style="line-height:1.6em;"><ul start="8" style="padding-right:30px; list-style-type:none; padding-top:0px;"><li>JSON</li>
 <li>AngularJS</li>
 <li>NodeJS</li>
 <li>Git</li>
@@ -270,18 +233,20 @@ footer p {
 <li>SPA</li>
 <li>TDD</li>
 <li>Terminal / Command Line</li>
-<li>XML</li></ul></p></RTcolumn>
-<!--Right Column End-->
+<li>XML</li></ul></p></td></tr>
+</table>
+</div><br>
   </article>
 
  </section>
-
+ </div>
 </main>
-
+<div class="col-md-12">
 <footer>
-  <p style="text-align:center; margin-top:5;">&copy; Copyright Jason James, 2016. All rights reserved.</p>
+  <p style="text-align:center; margin-top:5;">&copy; Jason James, 2016. All rights reserved.</p>
 <p style="text-align:center;"><a href="http://www.JasonAJames.com" target="_parent" style="text-decoration:none;"><img src="Footer_Image.gif" alt="Return to http://www.JasonAJames.com/"/></a></p>
 </footer>
-
+</div>
+</div>
 </body>
 </html>
